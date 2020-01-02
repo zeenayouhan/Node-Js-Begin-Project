@@ -17,7 +17,15 @@
 //console.log(__filename);
 //console.log(__dirname);
 
-const path = require('path');
+//const path = require('path');
 
-var pathobj= path.parse(__filename);
-console.log(pathobj);
+//var pathobj= path.parse(__filename);
+//console.log(pathobj);
+
+var os = require('os');
+
+var totalmemory= os.totalmem();
+var freeMem= os.freemem();
+
+console.log(`TotalMemory ${totalmemory}`);
+console.log(`FreeMemory ${freeMem}`);
